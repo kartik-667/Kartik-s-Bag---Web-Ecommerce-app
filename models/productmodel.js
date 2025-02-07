@@ -1,7 +1,6 @@
 const mongoose=require('mongoose')
 
 
-
 const productschema=new mongoose.Schema({
     name:String,
     price:Number,
@@ -12,7 +11,7 @@ const productschema=new mongoose.Schema({
     panelcolor:String,
     textcolor:String,
     bgcolor:String,
-    image:String
+    image:Buffer
 
 })
 

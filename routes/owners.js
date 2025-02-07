@@ -37,5 +37,9 @@ ownerRouter.post('/create',async (req,res)=>{
     
 })
 
+ownerRouter.get('/admin',(req,res)=>{
+    res.render('createproducts', { success: req.flash('success') || '' });
+})
+
 
 module.exports=ownerRouter
